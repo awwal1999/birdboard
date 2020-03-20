@@ -1,14 +1,16 @@
-
-// Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
-
 // Variables
 @import 'variables';
-
 // Bootstrap
-@import '~bootstrap/scss/bootstrap';
-
-.navbar-laravel {
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+// @import '~bootstrap/scss/bootstrap';
+@tailwind base;
+@tailwind components;
+.button {
+    @apply .bg-blue-350 .text-white .rounded-lg .text-sm .py-2 .px-5;
+    box-shadow: 0 2px 7px 0 #b0eaff;
 }
+
+.card {
+    @apply .bg-white .p-5 .rounded-lg .shadow
+}
+
+@tailwind utilities;
